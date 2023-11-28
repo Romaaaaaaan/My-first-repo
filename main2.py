@@ -3,7 +3,7 @@
 '''
 from lab5 import Planet, PlanetType, Planetary
 
-def println():
+def print_planet_parametrs():
     '''
     виводить значення про планети
     '''
@@ -23,4 +23,4 @@ def println():
     print(planetary.sort_by_length_of_day())
 
 if __name__ == "__main__":
-    println()
+    print_planet_parametrs()
