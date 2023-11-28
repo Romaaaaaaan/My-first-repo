@@ -5,6 +5,7 @@
 
 from enum import Enum
 
+
 class PlanetType(Enum):
     '''
     Клас по визначенню типу планети
@@ -29,11 +30,13 @@ class Planet:
         self.distance_from_sun = kilometres
         self.type = planet_type
 
+
     def find_mass(self):
         '''
         Виводить масу планети
         '''
         return f"Маса планети {self.name}: {self.mass}"
+
 
     def find_mean_temparature(self):
         '''
@@ -42,16 +45,14 @@ class Planet:
         return f"Температура планети {self.name}: {self.mean_temparature}"
 
 
-# Забрати наслідування, все крім селф в ініті і забрати супер ініт
-class Planetary(Planet):
+class Planetary():
     '''
     Клас який містить планети
     '''
-    def __init__(self, name, kg, speed, degree, hour, kilometres, planet_type):
+    def __init__(self):
         '''
         Функція яка ініціалізує планети
         '''
-        super().__init__(name, kg, speed, degree, hour, kilometres, planet_type)
         self.planets = []
 
     def add_planet(self, planet):
@@ -66,13 +67,15 @@ class Planetary(Planet):
         '''
         self.planets.sort(key=lambda x: x.length_of_day)
         for i in self.planets:
-            print(f"Назва планети: {i.name}, Довжина світлового дня: {i.length_of_day}")
+           return f"Назва планети: {i.name}, Довжина світлового дня: {i.length_of_day}"
+
 
     def find_distance_between(self, planet_a, planet_b):
         '''
         Фунція яка шукаю відстань між планетами
         '''
-        print(abs(planet_a.distance_from_sun - planet_b.distance_from_sun))
+        return abs(planet_a.distance_from_sun - planet_b.distance_from_sun)
+
 
     def find_average_mass(self):
         '''
