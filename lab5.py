@@ -66,8 +66,10 @@ class Planetary():
         Функція яка сортує планети за довжиною дня
         '''
         self.planets.sort(key=lambda x: x.length_of_day)
+        result = ""
         for i in self.planets:
-           return f"Назва планети: {i.name}, Довжина світлового дня: {i.length_of_day}"
+           result += f"Назва планети: {i.name}, Довжина світлового дня: {i.length_of_day}\n"
+        return result
 
 
     def find_distance_between(self, planet_a, planet_b):

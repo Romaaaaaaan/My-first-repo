@@ -1,7 +1,7 @@
 '''
-імпортує класи з файлу lab6
+імпортує класи з файлу lab5
 '''
-from lab6 import Planet, PlanetType, Planetary
+from lab5 import Planet, PlanetType, Planetary
 
 def println():
     '''
@@ -20,7 +20,7 @@ def println():
 
     print(planetary.find_average_mass())
 
-    planetary.sort_by_length_of_day()
+    print(planetary.sort_by_length_of_day())
 
 if __name__ == "__main__":
     println()
