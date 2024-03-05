@@ -12,4 +12,6 @@ def is_monotone(arr):
         return True
 
     return increasing() or descending()
-print(is_monotone([1,2,3,4,4,5]))   
+print(is_monotone([2, 2, 2, 2, 2]))   
+print(is_monotone([2, 2, 2, 2, 1]))   
+print(is_monotone([2, 2, 2, 2, 3]))   
