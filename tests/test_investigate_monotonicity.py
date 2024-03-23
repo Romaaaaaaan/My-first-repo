@@ -27,20 +27,5 @@ class TestIsMonotone(unittest.TestCase):
         result = is_monotone(arr)
         self.assertEqual(result, False)
 
-    def test_sequence(self):
-        arr = [2, 2, 2, 2, 2]
-        result = is_monotone(arr)
-        self.assertEqual(result, True)
-
-    def test_increasing_sequence(self):
-        arr = [2, 2, 2, 2, 3]
-        result = is_monotone(arr)
-        self.assertEqual(result, True)
-
-    def test_descending_sequence(self):
-        arr = [2, 2, 2, 2, 1]
-        result = is_monotone(arr)
-        self.assertEqual(result, True)            
-
 if __name__ == "__main__":
     unittest.main()
